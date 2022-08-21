@@ -1,0 +1,28 @@
+.banner {
+    background-color: black;
+    height: 70vh;
+}
+
+.banner-img-pele {
+    width: 35%;
+    position: relative;
+    top: -315px;
+    left: -100px;
+}
+
+.banner-img-football {
+    width: 30%;
+    position: absolute;
+    right: 0px;
+    top: 90px
+}
+
+.banner-heading {
+    font-size: 3em;
+    color: rgb(220, 76, 23);
+    font-family: cursive;
+}
+
+.player-card {
+    background-color: black;
+}
