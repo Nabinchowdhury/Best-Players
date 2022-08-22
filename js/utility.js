@@ -2,7 +2,10 @@ function getValueById(id) {
     const elementId = document.getElementById(id);
     const targetValueString = elementId.value;
     const targetValue = parseInt(targetValueString);
-    elementId.value = "";
+    if (isNaN(targetValue)) {
+        elementId.value = "";
+    }
+
     return targetValue;
 }
 function setTextById(id, value) {
