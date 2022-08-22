@@ -1,4 +1,5 @@
 document.getElementById("players-budget").addEventListener('click', function () {
+
     calculatePlayersExpense();
 
 })
@@ -12,9 +13,16 @@ function calculatePlayersExpense() {
 
     const perPlayerBudget = getValueById("per-player-budget");
 
-    const totalPlayersExpenses = perPlayerBudget * 5;
-    // console.log(perPlayerBudget)
-    setTextById("players-expenses", totalPlayersExpenses)
+    if (isNaN(perPlayerBudget)) {
 
+        alert("Input A Proper Budget Amount In Numbers")
+        setTextById("players-expenses", 0)
+
+        return;
+
+    }
+
+    const totalPlayersExpenses = perPlayerBudget * 5;
+    setTextById("players-expenses", totalPlayersExpenses)
     return totalPlayersExpenses;
 }
