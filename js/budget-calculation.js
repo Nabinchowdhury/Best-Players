@@ -17,7 +17,7 @@ function calculatePlayersExpense() {
     if (isNaN(perPlayerBudget)) {
 
         alert("Input A Proper Budget Amount In Numbers")
-        setTextById("players-expenses", 0)
+        setTextById("players-expenses", 0);
 
         return;
 
