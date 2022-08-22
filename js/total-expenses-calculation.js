@@ -3,11 +3,12 @@ document.getElementById("total-budget").addEventListener('click', function () {
     if (isNaN(playersExpense)) {
         return;
     }
+    const onlyPlayersExpenses = parseInt(getTextById("players-expenses"))
     const managerExpense = getValueById("manager-expense");
     const coachExpense = getValueById("coach-expense");
 
     // console.log(managerExpense);
-    const allTotalBudgetExpense = playersExpense + managerExpense + coachExpense;
+    const allTotalBudgetExpense = onlyPlayersExpenses + managerExpense + coachExpense;
     // console.log(allTotalBudgetExpense)
     if (isNaN(allTotalBudgetExpense)) {
         alert("Input A Proper Budget Amount In Numbers")

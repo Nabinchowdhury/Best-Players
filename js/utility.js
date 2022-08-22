@@ -5,8 +5,13 @@ function getValueById(id) {
     elementId.value = "";
     return targetValue;
 }
-
 function setTextById(id, value) {
     const targetId = document.getElementById(id);
     targetId.innerText = value;
+}
+
+function getTextById(id) {
+    const targetId = document.getElementById(id);
+    const targetText = targetId.innerText;
+    return targetText;
 }
