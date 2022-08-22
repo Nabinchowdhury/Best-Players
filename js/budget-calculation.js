@@ -8,7 +8,8 @@ function calculatePlayersExpense() {
     const cardBody = document.getElementById("card-body")
 
     if (cardBody.children.length < 5) {
-        return alert("You Must Select Five Players")
+        return alert("You Must Select Five Players");
+
     }
 
     const perPlayerBudget = getValueById("per-player-budget");
